@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=VT323&display=swap');
+body {
+    background-color: #0a0a08;
+}
+
+.cp-root {
+    background: #0a0a08;
+    color: #b8b090;
+    font-family: 'Courier Prime', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 2.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.cp-root a { color: #6a8a4a; text-decoration: underline; }
+.cp-root a:hover { color: #9ab86a; }
+
+.header-block {
+    border-bottom: 1px solid #2a2a1a;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: clamp(2.8rem, 8vw, 5rem);
+    letter-spacing: 6px;
+    color: #d4c88a;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 0 40px rgba(180,160,80,0.15);
+}
+
+
+.content-zone {
+    margin: 0 0 3rem;
+}
+
+.content-box {
+    border: 1px solid #2a2a18;
+    background: #0e0e0a;
+    padding: 1.6rem 1.8rem;
+    position: relative;
+}
+
+.content-box::before {
+    content: 'EXCERPT::';
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #3a3a28;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1a1a12;
+    padding-bottom: 6px;
+}
+
+#quote {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    line-height: 1.7;
+    color: #c8bc80;
+    border-left: 2px solid #3a3a28;
+    padding-left: 1rem;
+    margin: 0 0 1.2rem;
+    font-style: italic;
+}
+
+#chapter {
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #4a4a38;
+    border-top: 1px solid #1a1a12;
+    padding-top: 0.8rem;
+}
+
+.btn-row {
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-row::before {
+    content: '>';
+    color: #3a3a28;
+    font-size: 1.2rem;
+}
+
+button {
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #3a3a28;
+    padding: 5px 24px 3px;
+    cursor: pointer;
+    color: #7a7a58;
+    transition: all 0.15s;
+}
+
+button:hover {
+    border-color: #8a7a50;
+    color: #d4c88a;
+    background: #111108;
+}
+
+button:active {
+    background: #1a1a10;
+    color: #fff;
+}
+
+.pdf-links {
+    border-top: 1px solid #1a1a12;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+.pdf-links .label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #c2c2bf;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.pdf-links .links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pdf-links a {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #5a5a48;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.pdf-links a::before { content: '—'; color: #2a2a18; }
+.pdf-links a:hover { color: #8a7a50; }
