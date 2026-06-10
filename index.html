@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="terminal-wrap">
+        <div class="titlebar">
+            <div class="titlebar-label">[MSC v.1935 64 bit (AMD64)] on win32</div>
+            <div class="win-btns">
+                <div class="win-btn">&#8211;</div>
+                <div class="win-btn">&#9633;</div>
+                <div class="win-btn close">&#x2715;</div>
+            </div>
+        </div>
+            <div class="terminal-body">
+                <div class="output-area" id="output">
+                </div>
+                <div class="input-row" id="input-row">
+                    <span class="prompt">&gt;&gt;&gt;&nbsp;</span>
+                    <input class="fake-input" id="repl-input" type="text" autocomplete="off" spellcheck="false" autofocus />
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>
